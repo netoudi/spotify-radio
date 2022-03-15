@@ -1,5 +1,6 @@
 import { createServer } from 'http';
+import { handler } from './routes.js';
 
-const server = createServer((req, res) => res.end('Hello World!'));
+const server = createServer(handler);
 
 export default server;
