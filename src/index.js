@@ -1,6 +1,4 @@
-import { createServer } from 'http';
-
-const server = createServer((req, res) => res.end('Hello World!'));
+import server from './server.js';
 
 server
   .listen(3333)
