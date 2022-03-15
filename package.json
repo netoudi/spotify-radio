@@ -1,0 +1,29 @@
+{
+  "name": "spotify-radio",
+  "version": "1.0.0",
+  "description": "Spotify Radio",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netoudi/spotify-radio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netoudi/spotify-radio/issues"
+  },
+  "homepage": "https://github.com/netoudi/spotify-radio#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  }
+}
