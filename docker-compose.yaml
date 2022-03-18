@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  live-reload:
+    build: .
+    image: spotify-radio
+    container_name: spotify-radio-live-reload
+    environment:
+      - PORT=3333
+    ports:
+      - "3333:3333"
+    command:
+      - npm
+      - run
+      - live-reload
+    volumes:
+      - ./:/spotify-radio
+      - node_moules:/spotify-radio/node_moules
+
+volumes:
+  node_moules: {}
