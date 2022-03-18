@@ -173,6 +173,12 @@
     <p>Listening on Erick Wendel</p>
   </div>
   <script src="./home/js/animation.js"></script>
+  <script>
+    // bypass prevent cache
+    window.onload = function() {
+      document.getElementById('audio').src = '/stream?id=' + Date.now();
+    };
+  </script>
 </body>
 
 </html>
